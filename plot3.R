@@ -1,5 +1,7 @@
+require(png)
 require(dplyr)
 require(ggplot2)
+
 # Data for this project is found at https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip
 # Download the data file and unzip it
 download.file(url="https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip", destfile="NEI_data.zip", method="libcurl")
