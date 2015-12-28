@@ -24,7 +24,7 @@ q5_years <- q5_data %>% group_by(year) %>% summarise(Total.Emissions = sum(Emiss
 # Now show the plot. I've adjusted the y-axis limits to values which will show the trend less dramatically
 png(filename="plot5.png")
 with(q5_years, plot(year, Total.Emissions, 
-                           main="Total PM2.5 Emissions from Motor Vehicl Sources in Baltimore by Year",
+                           main="Total PM2.5 Emissions from Motor Vehicle Sources\nin Baltimore by Year",
                            type="b", 
                            xlab="Year", 
                            ylab="Total PM2.5 Emissions", 

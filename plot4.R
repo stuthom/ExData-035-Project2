@@ -20,7 +20,7 @@ q4_data <- merge(NEI, scc_coal, by="SCC")
 q4_years <- q4_data %>% group_by(year, EI.Sector) %>% summarise(Total.Emissions = sum(Emissions))
 
 # Now plot it
-png(filename="plot4.png")
+png(filename="plot4.png", width=760, height=480)
 xyplot(Total.Emissions ~ year | EI.Sector, data=q4_years, layout=c(3,1), type=c("p", "r"))
 dev.off()
 
