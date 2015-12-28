@@ -1,4 +1,3 @@
-require(png)
 require(dplyr)
 require(ggplot2)
 
